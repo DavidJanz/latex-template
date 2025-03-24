@@ -1,0 +1,58 @@
+\pdfoutput=1
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=3cm]{geometry} 
+\usepackage{authblk}
+
+\usepackage[T1]{fontenc}    % inputenc package is not needed in modern latex
+\usepackage{microtype}      % microtypography
+\usepackage{lmodern}     % libertinus or lmodern
+
+\usepackage{xcolor}
+
+\usepackage{mathtools,amssymb}   % mathtools replaces amsmath
+\mathtoolsset{showonlyrefs,showmanualtags}
+
+\usepackage{my_notation}
+
+\usepackage{amsthm}
+\usepackage{thmtools}                   % thmtools still requires amsthm
+
+\usepackage{my_citations}   % before hyperref
+\addbibresource{references.bib}
+
+\usepackage{csquotes}           
+\usepackage[british]{babel}     % before hyperref, after bilbatex
+
+\usepackage[hidelinks]{hyperref}       % hyperlinks
+\usepackage{zref-clever}
+\zcsetup{cap}
+
+\usepackage{my_theorems}
+
+
+\title{\textbf{\LaTeX~project template}}
+
+\author[1]{David Janz}
+\author[2]{Csaba Szepesvári}
+\affil[1]{University of Oxford}
+\affil[2]{University of Alberta}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    This is an abstract \citep{janz2022sequential}.
+\end{abstract}
+
+\input{sections/paper.tex}
+
+\printbibliography
+\newpage
+
+\appendix
+\input{sections/appendix.tex}
+
+\end{document}
