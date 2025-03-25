@@ -17,6 +17,8 @@
 \usepackage{amsthm}
 \usepackage{thmtools}                   % thmtools still requires amsthm
 
+\usepackage[boxed]{algorithm2e}         % nice boxed algorithms
+
 \usepackage{my_citations}   % before hyperref
 \addbibresource{references.bib}
 
@@ -26,6 +28,7 @@
 \usepackage[hidelinks]{hyperref}       % hyperlinks
 \usepackage{zref-clever}
 \zcsetup{cap}
+\let\cref\zcref
 
 \usepackage{my_theorems}
 
