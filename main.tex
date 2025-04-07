@@ -27,8 +27,19 @@
 
 \usepackage[hidelinks]{hyperref}       % hyperlinks
 \usepackage{zref-clever}
-\zcsetup{cap}
 \let\cref\zcref
+\zcsetup{cap}
+
+\AddToHook{env/algorithm/begin}{%
+   \zcsetup{reftype=algorithm}}
+
+\zcRefTypeSetup{algorithm}{
+Name-sg = Algorithm,
+name-sg = algorithm,
+Name-pl = Algorithms,
+name-pl = algorithms,
+}
+
 
 \usepackage{my_theorems}
 
