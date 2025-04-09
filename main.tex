@@ -5,12 +5,13 @@
 
 \usepackage[T1]{fontenc}    % inputenc package is not needed in modern latex
 \usepackage{microtype}      % microtypography
-\usepackage{lmodern}     % libertinus or lmodern
+\usepackage{libertinus}     % libertinus or lmodern
 
 \usepackage{xcolor}
 
 \usepackage{mathtools,amssymb}   % mathtools replaces amsmath
 \mathtoolsset{showonlyrefs,showmanualtags}
+\usepackage{bm}             % bold math symbols
 
 \usepackage{my_notation}
 
@@ -28,7 +29,7 @@
 \usepackage[hidelinks]{hyperref}       % hyperlinks
 \usepackage{zref-clever}
 \let\cref\zcref
-\zcsetup{cap}
+\zcsetup{cap}                   % capitalise cross-references
 
 \AddToHook{env/algorithm/begin}{%
    \zcsetup{reftype=algorithm}}
@@ -40,8 +41,9 @@ Name-pl = Algorithms,
 name-pl = algorithms,
 }
 
-
 \usepackage{my_theorems}
+
+\usepackage{enumitem}           % Customise enumerations
 
 
 \title{\textbf{\LaTeX~project template}}
