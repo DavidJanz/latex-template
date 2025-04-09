@@ -1,1 +1,33 @@
-\input{my_letters.tex}
+\RequirePackage{my_letters.tex}
+
+\let\epsilon\varepsilon
+
+%%% Standard operators %%%
+\newcommand*\dif{\mathop{}\!\mathrm{d}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\var}{\operatorname{Var}}
+
+%%% Sets %%%
+\newcommand{\Bd}{\bB^d_2}
+\newcommand{\Sd}{\bS^{d-1}_2}
+\newcommand{\R}{\bR}
+\newcommand{\Rd}{\R^d}
+\newcommand{\Rp}{\R_+}
+\newcommand{\Rpp}{\R_++}
+\newcommand{\N}{\bN}
+\newcommand{\Np}{\N_+}
+
+%%% Brackets %%%
+\DeclarePairedDelimiter{\curlyb}{\{}{\}}
+\DeclarePairedDelimiter{\squareb}{[}{]}
+\DeclarePairedDelimiter{\roundb}{(}{)}
+\DeclarePairedDelimiter{\norm}{\|}{\|}
+\DeclarePairedDelimiter{\abs}{|}{|}
+
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newcommand{\poly}{\operatorname{poly}}
