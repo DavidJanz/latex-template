@@ -30,7 +30,7 @@
 \usepackage{bookmark}           % better handling of document overviews for pdf readers
 \usepackage{zref-clever}
 \let\cref\zcref
-\zcsetup{cap}                   % capitalise cross-references
+\zcsetup{cap,nameinlink=false}                   % capitalise cross-references, link only the environment number (not name)
 
 \AddToHook{env/algorithm/begin}{%
    \zcsetup{reftype=algorithm}}
