@@ -1,11 +1,10 @@
 \RequirePackage{my_letters}
 
 \let\epsilon\varepsilon
+\let\phi\varphi
 
 %%% Standard operators %%%
 \newcommand*\dif{\mathop{}\!\mathrm{d}}
-\newcommand{\id}{\operatorname{id}}
-\newcommand{\var}{\operatorname{Var}}
 
 %%% Sets %%%
 \newcommand{\Bd}{\bB^d_2}
@@ -16,12 +15,13 @@
 \newcommand{\Rpp}{\R_++}
 \newcommand{\N}{\bN}
 \newcommand{\Np}{\N_+}
-\renewcommand{\P}[2][]{\bP\curlyb[#1]{#2}}
-\newcommand{\1}[1]{\mathbf{1}[#1]}
-\newcommand{\E}{\bE}
+\newcommand{\FF}{\bF}
+\providecommand{\one}{\mathbf{1}}
 
-\newcommand{\GP}{\mathcal{GP}}
-\newcommand{\op}{\mathrm{op}}
+
+\renewcommand{\P}[2][]{\bP\curlyb[#1]{#2}}
+\newcommand{\E}{\bE}
+\newcommand{\1}[1]{\mathbf{1}[#1]}
 
 %%% Brackets %%%
 \DeclarePairedDelimiter{\curlyb}{\{}{\}}
@@ -38,8 +38,24 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
 
-\newcommand{\poly}{\operatorname{poly}}
+\DeclareMathOperator{\poly}{poly}
+\DeclareMathOperator{\polylog}{polylog}
+
 
 \newcommand*{\tran}{^{\mkern-1.5mu\mathsf{T}}}
 \newcommand*{\inv}{^{\mkern-1.5mu\mathsf{-1}}}
 
+\newcommand{\spaced}[1]{\qquad\text{#1}\qquad}
+
+\DeclareMathOperator{\op}{op}
+\DeclareMathOperator{\id}{id}
+
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\vol}{vol}
+
+\DeclareMathOperator{\Binomial}{Binomial}
+\DeclareMathOperator{\Beta}{Beta}
